@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvolveU Project #01</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head> 
+<style>
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
+    
+}
+
+.main-header {
+    width: 100%;
+    height: 2rem;
+    background-color: #dbc441;
+    padding: 0 1.5rem;
+}
+.main-header__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.main-header__item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.main-header__item {
+    margin: 0 1rem;
+    padding: 0;
+}
+.main-header__item a {
+    text-decoration: none;
+    color: black;
+}
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+    color: #3e00a1;
+}
+
+
+.firstHead {
+    height: fit-content;
+    color: rgb(7, 74, 197);
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(245, 242, 149);
+    padding: 0;
+    margin: 0;
+}
+
+.firstSection {
+   background-image: url('https://img.theculturetrip.com/1440x807/smart/wp-content/uploads/2018/01/fish-378286_1280.jpg');
+   display: block;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left: 0;
+   margin-right: 0;
+   padding: 0;
+   width: 100%;
+   height: 40rem;
+   text-align: center;
+}
+
+.secondHead {
+    color: rgb(235, 235, 19);
+    background-color: rgb(7, 74, 197);
+    width: 20%;
+}
+.sOne, .ratingExperience  {
+    text-align: left;
+    width: 20%;
+    background-color: rgb(7, 74, 197);
+    color: rgb(235, 235, 19);
+}
+
+.endTour {
+    text-align: left;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* .btn {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+} */
+
+</style>    
+    <body>
+        <header class="main-header">
+            <nav class="main-header__nav">
+                <ul class="main-header__item-list">
+                    <li class="main-header__item"><a href="/">Home Page</a></li>
+                    <li class="main-header__item"><a href="/tour_options">Tour Options</a></li>
+                </ul>  
+            </nav>
+        </header>
+        <div class="firstSection"> 
+            <h1 class="secondHead">Diving</h1>
+            <p class="sOne"> Enjoy the nature and find your inner peace! </p><br>
+            <div class="ratingExperience">
+                <form action="/beaches/noronha/diving" method="POST">
+                    <div>Please, don't forget to rate your trip.</div>
+                    <input name="noronhaDivingRate" type="number" min="0" max="10">
+                    <button class="btn btn-primary" type="submit" >Submit</button>
+                </form>
+            </div><br>   
+            <form class="endTour" action="/end_tour">
+                <button class="btn btn-warning" type="submit">End tour</button>
+            </form>
+        </div> 
+    </body>
+</html>

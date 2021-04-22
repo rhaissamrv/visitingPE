@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvolveU Project #01</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head> 
+<style>
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
+    
+}
+
+.main-header {
+    background-color: rgb(245, 242, 149);
+}
+
+.firstSection {
+   background-image: url('https://estrategiaods.org.br/wp-content/uploads/2018/04/maxresdefault-1.jpg');
+   display: block;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left: 0;
+   margin-right: 0;
+   padding: 0;
+   width: 100%;
+   height: 42rem;
+   text-align: center;
+}
+
+.sOne {
+    text-align: left;
+    background-color: rgb(245, 242, 149);
+    width: 20%;
+} 
+
+.firstHead {
+    text-align: center;
+    background-color: rgb(245, 242, 149);
+}
+
+.userInfo {
+    background-color: rgb(245, 242, 149);
+    text-align: left;
+    width: 20%
+}
+
+
+p {
+    margin-bottom: 0;
+}
+
+.btn {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+</style>    
+    <body>
+        <div class="firstSection"> 
+            <h1 class="firstHead">Welcome to Pernambuco!</h1>
+            <p class="sOne"> You are just about to know one of the coolest states in Brazil!
+                There are many places you can visit here, and I am sure all off them will blow your mind. 
+                Enjoy your trip!</p>
+            <p class="sOne">Before you start, I need some basic information about you.</p> <br>
+            <form class="userInfo" action="/" method="POST">
+                <div>What is your name?</div>
+                <input name="visitorName" type="text">
+                <div>What city are you coming from?</div>
+                <input name="visitorLocation" type="text"><br>
+                <button type="submit" class="btn btn-primary">Post</button>
+            </form>
+        </div> 
+    </body>
+</html>

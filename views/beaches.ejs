@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvolveU Project #01</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<style>
+    
+body {
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
+    
+}
+
+.main-header {
+    width: 100%;
+    height: 2rem;
+    background-color: #dbc441;
+    padding: 0 1.5rem;
+}
+.main-header__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.main-header__item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.main-header__item {
+    margin: 0 1rem;
+    padding: 0;
+}
+.main-header__item a {
+    text-decoration: none;
+    color: black;
+}
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+    color: #3e00a1;
+}
+
+.firstSection {
+   background-image: url('https://3.bp.blogspot.com/-351JpuMQ4SU/XAP2v35HtQI/AAAAAAAAowQ/IR-w3BtX8XM9fzHZdZuvIlFeGJac7K7qQCLcBGAs/s1600/IMG_20180921_173924_253-copia.jpg');
+   display: block;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left: 0;
+   margin-right: 0;
+   width: 100%;
+   height: 40rem;
+}
+
+h1 {
+   text-align: center;
+   width: 100%;
+}
+
+.secondSection {
+    background-color: rgb(245, 242, 149);
+    width: 100%;
+}
+
+p {
+   
+    width: fit-content;
+    max-width: 100%;
+    margin: 0;
+    align-items: left;
+    padding-bottom: 1rem;
+}
+
+.btn {
+    margin-bottom: 1rem;
+}
+
+</style>
+  
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a href="/">Home Page</a></li>
+                <li class="main-header__item"><a href="/tour_options">Tour Options</a></li>
+            </ul>  
+        </nav>
+    </header>
+    <div class="firstSection"> 
+        <h1>Welcome to the beaches!</h1>
+    </div> 
+    <div class="secondSection">
+        <p> Wow, great choice!</p> 
+        <p>We have 187km of coast and many many options for you to enjoy several days relaxing and doing outdoor activities. 
+        </p>
+        <p>Now it is time to make another choice. In what direction would you like to go?</p>
+        <form action="/beaches/noronha" method="GET">
+            <button class="btn btn-primary" type="submit">East</button>
+        </form>
+        <form action="/beaches/porto" method="GET">
+            <button class="btn btn-primary" type="submit">South</button>
+        </form>
+        <form action="/beaches/recife" method="GET">
+            <button class="btn btn-primary" type="submit">North</button>
+        </form>
+        <p>I am tired, I'd rather end my tour.</p>
+        <form action="/end_tour">
+            <button type="submit" class="btn btn-warning">End tour</button>
+        </form>
+    </div>
+</body>
+</html>

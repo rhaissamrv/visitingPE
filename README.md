@@ -13,7 +13,7 @@ The focus is to create a web app using HTTP APIs with Javascript and ExpressJS. 
 
 ## Dependencies
 
-- Express
 - Node 5.10.x or above
+- Express
 - EJS
 - Body Parser

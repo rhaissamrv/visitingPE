@@ -1,6 +1,6 @@
 # VisitingPE Project
 
-This is a multipage app made with educational purposes as the first assignment of EvolveU FullStack Developer Program.
+This is a multipage app made for educational purposes as the first assignment of EvolveU FullStack Developer Program.
 
 The focus is to create a web app using HTTP APIs with Javascript and ExpressJS. I used GET and POST methods and served HTML pages as user interface. 
 

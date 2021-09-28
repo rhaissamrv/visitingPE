@@ -6,14 +6,13 @@ The focus is to create a web app using HTTP APIs with Javascript and ExpressJS. 
 
 ## Getting Started
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm start` command. The app will be served at <http://localhost:3000/>.
-4. Go to <http://localhost:3000/> in your browser.
+1. Clone this repository
+2. Install dependencies using the `npm install` command
+3. Start the web server using the `npm start` command. The app will be served at <http://localhost:3000/>
+4. Go to <http://localhost:3000/> in your browser
 
-## Dependencies
+## Technologies
 
-- Node 5.10.x or above
+- NodeJS
 - Express
 - EJS
-- Body Parser
